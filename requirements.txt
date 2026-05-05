@@ -1,0 +1,9 @@
+# Core inference & app dependencies (HuggingFace Spaces)
+torch>=2.2.0
+torchvision>=0.17.0
+gradio>=4.31.0
+huggingface_hub>=0.22.0
+numpy>=1.26.0
+Pillow>=10.0.0
+omegaconf>=2.3.0
+hydra-core>=1.3.0

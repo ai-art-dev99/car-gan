@@ -1,0 +1,6 @@
+# Full training dependencies (Colab / AWS)
+-r requirements.txt
+matplotlib>=3.8.0
+kaggle>=1.6.0
+tensorboard>=2.16.0
+tqdm>=4.66.0

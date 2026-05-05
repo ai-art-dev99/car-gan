@@ -1,0 +1,32 @@
+model:
+  latent_dim: 128
+  image_size: 64        # 64x64 output (increase to 128 for better quality, needs more VRAM)
+  channels: 3
+  generator_features: 64
+  discriminator_features: 64
+
+training:
+  epochs: 200
+  batch_size: 64
+  lr_generator: 0.0002
+  lr_discriminator: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+  label_smoothing: 0.1  # real labels = 0.9 instead of 1.0
+  n_critic: 1           # train discriminator n_critic times per generator step
+
+data:
+  dataset_path: "./data/cars"
+  num_workers: 4
+  pin_memory: true
+
+logging:
+  save_interval: 10         # save checkpoint every N epochs
+  sample_interval: 5        # generate sample images every N epochs
+  sample_count: 16          # number of sample images to generate
+  log_dir: "./runs"
+  checkpoint_dir: "./checkpoints"
+
+deployment:
+  model_id: "your-hf-username/car-gan"   # HuggingFace model repo
+  spaces_id: "your-hf-username/car-gan-demo"
