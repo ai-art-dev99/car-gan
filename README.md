@@ -2,7 +2,7 @@
 
 A Deep Convolutional GAN (DCGAN) trained from scratch on the Stanford Cars dataset to generate novel, photorealistic car images from random noise.
 
-🔗 **Live Demo:** [HuggingFace Spaces](https://huggingface.co/spaces/ai-art-dev99/car-gan)
+🔗 **Live Demo:** [HuggingFace Spaces](https://parsa2025ai-cargandemo.hf.space)
 
 ---
 
